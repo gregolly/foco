@@ -16,17 +16,21 @@
 </section>
 
 <style>
-.load{
+.intro .load{
     animation: slide 2s;
+    timing-function: step-end;
 }
 .intro { 
     background-image: url('<?php the_field('bg-home'); ?>');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
+    backface-visibility: hidden;
     height: 600px;
     width: 100%;
-    animation: slide 40s infinite;
+    animation: slide 20s linear infinite;
+    animation-timing-function: step-end;
+    position: relative;
 }
 @keyframes slide{
     0%{

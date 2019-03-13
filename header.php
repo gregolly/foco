@@ -33,7 +33,7 @@
                     $args = array(
                         'menu' => 'principal',
                         'theme_location' => 'menu-principal',
-                        'container' => false
+                        'container' => 'ul'
                     );
                     wp_nav_menu( $args );
                 ?>

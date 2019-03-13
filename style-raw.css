@@ -476,17 +476,20 @@ a{
     z-index: 1000;
     overflow: hidden;
 }
-.menu-desktop .menu-principal ul li{
+.menu-desktop{
+    float: right;
+}
+.menu-desktop li{
 	float: right;
     font-size: 1.1em;
     text-transform: uppercase;
 }
-.menu-desktop .menu-principal ul li a{
+.menu-desktop  a{
     color: #fff;
     display: block;
     padding: 20px 10px;
 }
-.menu-desktop .menu-principal ul li a:hover{
+.menu-desktop a:hover{
     background-color: #fff;
     color: #000;
 }
@@ -563,53 +566,8 @@ a{
 .servicos.container .servicos-item a {
 	display: block;
 }
-.servicos-pages{
-    padding: 90px;
-}
-.servicos-pages h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #252525;
-}
-.titulo-servicos{
-    float: left;
-    width: calc(50% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.titulo-servicos img {
-	display: block;
-    width: 100%;
-    max-width: 600px;
-}
-.texto-servicos{
-    float: left;
-    width: calc(50% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.texto-servicos p {
-	line-height: 1.5;
-    font-size: 1em;
-}
-.btn1 {
-	display: inline-block;
-    background-color: #00A859;
-    text-align: center;
-    line-height: 40px;
-    margin-top: 8px;
-    padding: 8px 25px;
-    color: #fff;
-    text-transform: uppercase;
-}
-.link-servicos {
-	text-align: center;
-}
-.link-servicos p {
-	margin-top: 30px;
-}
-.BNE h1 {
+
+.BNE .container h1 {
 	text-align: center;
     text-transform: uppercase;
     font-size: 2em;
@@ -637,6 +595,7 @@ a{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    background-position: center center;
     padding: 60px 0;
 }
 /*
@@ -648,7 +607,7 @@ a{
     margin-top: 40px;
 }
 */
-.blog-itens {
+.BNE .container .blog-itens {
 	float: left;
     width: calc(33.3% - 20px);
     margin-left: 10px;
@@ -656,10 +615,10 @@ a{
     margin-bottom: 40px;
 }
 
-.blog-itens-single {
+.BNE .container .blog-itens-single {
     clear: both;
 }
-.blog-itens-single header::after{
+.BNE .container .blog-itens-single header::after{
     content: '';
     display: block;
     background: #fff;
@@ -667,18 +626,18 @@ a{
     height: 3px;
     margin-top: 10px;
 }
-.itens-noticia img {
+.BNE .container .blog-itens-single .itens-noticia img {
     float: left;
     padding-right: 10px;
     width: 138px;
     height: 138px;
 }
-.itens-noticia h2{
+.BNE .container .blog-itens-single .itens-noticia h2{
     color: #000;
     max-width: 400px;
     margin-bottom: 10px;
 }
-.itens-noticia a{
+.BNE .container .blog-itens-single .itens-noticia a{
 	display: inline-block;
     color: #fff;
     background-color: #00A859;
@@ -689,14 +648,14 @@ a{
     margin-top: 10px;
     margin-right: -4px;
 }
-.itens-noticia a:hover{
+.BNE .container .blog-itens-single .itens-noticia a:hover{
     background-color: #00A859;
     opacity: .6;
 }
-.itens-noticia p{
+.BNE .container .blog-itens-single .itens-noticia p{
     color: white;
 }
-.itens-noticia span {
+.BNE .container .blog-itens-single .itens-noticia span {
 	color: #ccc;
     display: block;
     padding-top: 10px;
@@ -707,12 +666,12 @@ a{
     float: left;
     overflow: hidden;
 }
-.pesquisas-empresa header{
+.pesquisas-depoimentos .container .pesquisas-empresa header{
     margin-bottom: 20px;
     font-size: 1.1em;
     text-transform: uppercase;
 }
-.pesquisas-empresa header::after{
+.pesquisas-depoimentos .container .pesquisas-empresa header::after{
     content: '';
     display: block;
     background: #000;
@@ -720,31 +679,20 @@ a{
     height: 2px;
     margin-top: 5px;
 }
-.titulo-pesquisa{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #fff;
-    overflow: hidden;
-    background-image: url('img/shape.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-}
-.lista-pesquisa li {
+.pesquisas-depoimentos .container .pesquisas-empresa .lista-pesquisa li {
     display: inline-block;
     max-width: 500px;
     margin-bottom: 50px;
 }
-.lista-pesquisa a:hover {
+.pesquisas-depoimentos .container .pesquisas-empresa .lista-pesquisa a:hover {
     color: #00A859;
 }
-.lista-pesquisa a{
+.pesquisas-depoimentos .container .pesquisas-empresa .lista-pesquisa p a{
 	display: inline-block;
     color: #000;
     max-width: 500px;
 }
-.lista-pesquisa span {
+.pesquisas-depoimentos .container .pesquisas-empresa .lista-pesquisa span {
 	display: block;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -766,7 +714,7 @@ a{
 .depoimentos-empresas img {
 	height: 40px;;
 }
-.depoimentos-empresas p {
+.depoimentos-empresas .depoimentos-slide-single.depoimento-slide p {
 	line-height: 1.4;
     font-style: italic;
     font-family: 'EB Garamond', serif;
@@ -774,12 +722,12 @@ a{
     max-width: 500px;
     display: inline-block;
 }
-.depoimentos-empresas span {
+.depoimentos-empresas .depoimentos-slide-single.depoimento-slide span {
 	color: #00A859;
     padding-top: 6px;
     display: block;3
 }
-.depoimento-slide {
+.depoimentos-empresas .depoimentos-slide-single.depoimento-slide {
 	text-align: center;
 }
 .cotacao-links {
@@ -788,12 +736,12 @@ a{
     float: left;
     overflow: hidden;
 }
-.cotacao-links header{
+.cotacao-links .container header{
     margin-bottom: 20px;
     font-size: 1.1em;
     text-transform: uppercase;
 }
-.cotacao-links header::after{
+.cotacao-links .container header::after{
     content: '';
     display: block;
     background: #000;
@@ -804,10 +752,10 @@ a{
 .links-uteis {
 	padding-top: 50px;
 }
-.all-links img{
+.links-uteis .all-links img{
 	padding-right: 20px;
 }
-.all-links a{
+.links-uteis .all-links a{
 	display: block;
     color: #00A859;
     text-transform: uppercase;
@@ -818,7 +766,7 @@ a{
     clear: both;
     overflow: hidden;
 }
-.contador-numero {
+.contador .container .contador-container .contador-numero {
 	position: relative;
     width: 120px;
     padding: 10px 20px 10px 10px;
@@ -829,7 +777,7 @@ a{
     text-align: center;
     display: inline-block;
 }
-.contador-numero:after {
+.contador .container .contador-container .contador-numero:after {
     content: " ";
     position: absolute;
     display: block;
@@ -844,12 +792,12 @@ a{
     -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
 }
-.contador-container {
+.contador .container .contador-container {
 	float: left;
     width: 25%;
     overflow: hidden;
 }
-.contador-container p{
+.contador .container .contador-container p{
     text-transform: uppercase;
     margin-top: 20px;
 }
@@ -859,12 +807,12 @@ a{
     clear: both;
     position: relative;
 }
-.itens-rodape {
+.rodape .rodape-single .itens-rodape {
 	color: #fff;
     float: left;
     width: 33.3%;
 }
-.itens-rodape header {
+.rodape .rodape-single .itens-rodape header {
 	position: relative;
     width: 200px;
     padding: 10px 20px 10px 10px;
@@ -877,14 +825,14 @@ a{
     text-align: center;
     top: -110px;
 }
-.itens-rodapeu ul{
+.rodape .rodape-single .itens-rodape ul{
 	position: relative;
     top: 40px;
 }
-.itens-rodape li {
+.rodape .rodape-single .itens-rodape li {
 	padding-bottom: 20px;
 }
-.itens-rodape img{
+.rodape .rodape-single  .itens-rodape img{
     padding-right: 15px;
 	position: relative;
     top: -1px;
@@ -900,7 +848,7 @@ a{
 .videos > .container {
     max-width: 800px;
 }
-.videos-single iframe{
+.videos .container .videos-single iframe{
 	border: 10px solid #fff;
 }
 .videos-single iframe{
@@ -1153,14 +1101,14 @@ a{
     border-radius: 4px;
 }
 
-.form-group label {
+.from-group label {
     font-weight: 400;
     line-height: 1.5;
     font-size: 1em;
     text-align: left;
 }
 
-textarea {
+.from-group  textarea {
     width: 100%;
     display: block;
     height: 120px;
@@ -1174,7 +1122,7 @@ textarea {
     border-radius: 4px;
 }
 
-.button {
+.from-group input{
     color: rgba(128,128,128);
     cursor: pointer;
     margin-top: 20px;
@@ -1186,6 +1134,27 @@ textarea {
     user-select: none;
     border: 1px solid transparent;
     padding: .375rem .75rem;
+    font-size: rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.from-group input[type="submit"] {
+    color: rgba(128,128,128);
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    width: 300px;
     font-size: rem;
     line-height: 1.5;
     border-radius: .25rem;
