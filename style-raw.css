@@ -555,7 +555,7 @@ a{
     display: block;
     height: 200px;
 }
-.servicos.container .servicos-item .servicos-item h2{
+.servicos.container .servicos-item h2{
     text-align: center;
     background: #00A859;
     color: #fff;
@@ -590,6 +590,60 @@ a{
     background-position: center;
     position: relative;
 }
+.blog-page .container .blog-itens {
+	float: left;
+    width: calc(33.3% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.blog-page .container .blog-itens-single {
+    clear: both;
+}
+.blog-page .container .blog-itens-single header::after{
+    content: '';
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+}
+.blog-page .container .blog-itens-single .itens-noticia img {
+    float: left;
+    padding-right: 10px;
+    width: 138px;
+    height: 138px;
+}
+.blog-page .container .blog-itens-single .itens-noticia h2{
+    color: #000;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+.blog-page .container .blog-itens-single .itens-noticia a{
+	display: inline-block;
+    color: #fff;
+    background-color: #00A859;
+    width: 135px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: -4px;
+}
+.blog-page .container .blog-itens-single .itens-noticia a:hover{
+    background-color: #00A859;
+    opacity: .6;
+}
+.blog-page .container .blog-itens-single .itens-noticia p{
+    color: white;
+}
+.blog-page .container .blog-itens-single .itens-noticia span {
+	color: #ccc;
+    display: block;
+    padding-top: 10px;
+}
+/* fim*/
 .BNE{
 	background-image: url('img/bg-blog.png');
     background-repeat: no-repeat;
@@ -696,6 +750,25 @@ a{
 	display: block;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: #00A859;
+}
+.pesquisa-page .titulo-pesquisa{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    overflow: hidden;
+    background-image: url('img/shape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.pesquisa-page .pesquisas-empresa .lista-pesquisa p a{
+    display: inline-block;
+    color: #000;
+    margin-bottom: 20px;
+}
+.pesquisa-page .pesquisas-empresa .lista-pesquisa p a:hover{
     color: #00A859;
 }
 .depoimentos-empresas header{
@@ -1128,7 +1201,6 @@ a{
     margin-top: 20px;
     display: inline-block;
     font-weight: 400;
-    text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     user-select: none;
@@ -1163,7 +1235,10 @@ a{
     -o-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
+.from-group input[type="submit"]:hover{
+    background-color: #00A859;
+    color: #fff;
+}
 .button:hover {
     background: #00A859;
     color: white;
@@ -1283,7 +1358,7 @@ a{
         margin-left: 0;
         margin-bottom: 20px;
     }
-    .blog-itens {
+    .BNE .container .blog-itens {
         float: none;
         width: 100%;
         margin-left: 0px;
@@ -1305,18 +1380,18 @@ a{
         width: 100%;
         float: none;
     }
-    .contador-container {
+    .contador .container .contador-container {
         float: none;
         width: 100%;
         text-align: center;
         margin-top: 20px;
     }
-    .itens-rodape {
+    .rodape .rodape-single .itens-rodape {
         float: none;
         width: 100%;
         text-align: center;
     }
-    .itens-rodape header {
+    .rodape .rodape-single .itens-rodape header {
         margin-top: 40px;
         margin-bottom: 20px;
         top: 0px;
@@ -1381,7 +1456,14 @@ a{
     .rodape {
         overflow: hidden;
     }
-    
+    .blog-page .container .blog-itens {
+        float: none;
+        width: calc(100% - 20px);
+        text-align: center;
+    }
+    .blog-page .container .blog-itens-single .itens-noticia img{
+        float: none;
+    }
 }
 
 
